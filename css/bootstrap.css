@@ -811,7 +811,6 @@ textarea.input-lg {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    -ms-touch-action: manipulation;
     touch-action: manipulation;
     cursor: pointer;
     user-select: none;
@@ -884,7 +883,7 @@ textarea.input-lg {
 
 .btn-link {
     font-weight: 400;
-    color: #337ab7;
+    color: #b73333;
     border-radius: 0
 }
 
@@ -898,13 +897,13 @@ textarea.input-lg {
 }
 
 .btn-link:focus, .btn-link:hover {
-    color: #23527c;
+    color: #b73333;;
     text-decoration: underline;
     background-color: transparent
 }
 
 .btn-link[disabled]:focus, .btn-link[disabled]:hover {
-    color: #777;
+    color: #b73333;;
     text-decoration: none
 }
 
@@ -1413,24 +1412,6 @@ a.label:focus, a.label:hover {
 
 .label-success[href]:focus, .label-success[href]:hover {
     background-color: #449d44
-}
-
-@-webkit-keyframes progress-bar-stripes {
-    from {
-        background-position: 40px 0
-    }
-    to {
-        background-position: 0 0
-    }
-}
-
-@-o-keyframes progress-bar-stripes {
-    from {
-        background-position: 40px 0
-    }
-    to {
-        background-position: 0 0
-    }
 }
 
 @keyframes progress-bar-stripes {
