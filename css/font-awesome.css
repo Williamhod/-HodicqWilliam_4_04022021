@@ -152,8 +152,6 @@
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
 }
 
 @keyframes fa-spin {
@@ -161,8 +159,12 @@
         transform: rotate(0);
     }
     100% {
-        transform: rotate(359deg)
-    }
+        transform: rotate(359deg)    ;
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+}
 }
 
 .fa-close:before {
