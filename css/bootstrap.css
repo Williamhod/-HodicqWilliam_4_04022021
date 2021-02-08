@@ -881,31 +881,7 @@ textarea.input-lg {
     border-color: #4cae4c
 }
 
-.btn-link {
-    font-weight: 400;
-    color: #b73333;
-    border-radius: 0
-}
 
-.btn-link, .btn-link:active, .btn-link[disabled] {
-    background-color: transparent;
-    box-shadow: none
-}
-
-.btn-link, .btn-link:active, .btn-link:focus, .btn-link:hover {
-    border-color: transparent
-}
-
-.btn-link:focus, .btn-link:hover {
-    color: #b73333;;
-    text-decoration: underline;
-    background-color: transparent
-}
-
-.btn-link[disabled]:focus, .btn-link[disabled]:hover {
-    color: #b73333;;
-    text-decoration: none
-}
 
 .btn-group-lg>.btn, .btn-lg {
     padding: 10px 16px;
