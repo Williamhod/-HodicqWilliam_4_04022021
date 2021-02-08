@@ -570,6 +570,33 @@ label {
     color: #364577!important;
     border-color: #364577!important
 }
+/*footer change*/
+
+#footer-link{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -4%;
+}
+
+#footer-link>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.footer-partners{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 .bg-dots-bg {
     background-image: url(https://williamhod.github.io/-HodicqWilliam_4_04022021/img/dots-bg.png)
@@ -715,6 +742,31 @@ label {
     }
     form {
         padding: 5px
+    }
+    #footer-link{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -15%;
+    }
+    
+    #footer-link>ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .footer-partners{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 
