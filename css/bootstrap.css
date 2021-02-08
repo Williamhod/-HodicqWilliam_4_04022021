@@ -793,7 +793,7 @@ textarea.input-lg {
 
 .btn-link {
     font-weight: 400;
-    color: #337ab7;
+    color: #b77e33;
     border-radius: 0
 }
 
@@ -807,13 +807,13 @@ textarea.input-lg {
 }
 
 .btn-link:focus, .btn-link:hover {
-    color: #23527c;
+    color: #b77e33;
     text-decoration: underline;
     background-color: transparent
 }
 
 .btn-link[disabled]:focus, .btn-link[disabled]:hover {
-    color: #777;
+    color: #b77e33;
     text-decoration: none
 }
 
