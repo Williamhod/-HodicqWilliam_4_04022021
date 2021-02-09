@@ -24,13 +24,13 @@ DirectoryIndex https://williamhod.github.io/-HodicqWilliam_4_04022021/
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
  <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|js|jpg)$">
- Header set Cache-Control "max-age=2592000, public"
+ Header set Cache-Control " min-age=2591999 max-age=2592000, public"
  </FilesMatch>
  <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|js|jpg)$">
- Header set Cache-Control "max-age=2592000, private"
+ Header set Cache-Control "min-age=2591999 max-age=2592000, private"
  </FilesMatch>
 <filesMatch "\.(html|htm)$">
-Header set Cache-Control "max-age=2592000 public"
+Header set Cache-Control "min-age=7199 max-age=7200 public"
 </filesMatch>
 # Enleve le cache pour les ressources dynamiques
 <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
