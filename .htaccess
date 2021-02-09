@@ -12,6 +12,15 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
 # END GZIP
 
+Options +FollowSymLinks
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://williamhod.github.io/-HodicqWilliam_4_04022021/[nc]
+RewriteRule ^(.*)$ http://www.https://williamhod.github.io/-HodicqWilliam_4_04022021//$1 [r=301,nc]
+
+//Change default directory page
+DirectoryIndex https://williamhod.github.io/-HodicqWilliam_4_04022021/
+
 # CACHE NAVIGATEUR
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
