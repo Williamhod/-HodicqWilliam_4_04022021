@@ -1,37 +1,9 @@
-# GZIP Apache 2.0
-# BEGIN GZIP
-SetOutputFilter DEFLATE
-AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
-
-BrowserMatch ^Mozilla/4 gzip-only-text/html
-BrowserMatch ^Mozilla/4\.0[678] no-gzip
-BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
-# END GZIP
-
 # CACHE NAVIGATEUR
-# BEGIN Cache-Control Headers
-<IfModule mod_headers.c>
- <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|js)$">
- Header set Cache-Control "max-age=2592000, public"
- </FilesMatch>
- <FilesMatch "\.(js)$">
- Header set Cache-Control "max-age=2592000, private"
- </FilesMatch>
-<filesMatch "\.(html|htm)$">
-Header set Cache-Control "max-age=7200, public"
-</filesMatch>
-# Enleve le cache pour les ressources dynamiques
-<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
-Header unset Cache-Control
-</FilesMatch>
-</IfModule>
-# END Cache-Control Headers
 
-# BEGIN Expires Headers
 <IfModule mod_expires.c>
-ExpiresActive On
-# Images
+  ExpiresActive On
+
+ # Images
   ExpiresByType image/jpeg "access plus 1 year"
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
@@ -59,6 +31,4 @@ ExpiresActive On
   # Others
   ExpiresByType application/pdf "access plus 1 month"
   ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
-  
 </IfModule>
-# END Expires Headers
