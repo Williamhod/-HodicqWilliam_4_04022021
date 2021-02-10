@@ -219,7 +219,7 @@ p {
 }
 
 .text-center {
-    text-align: center
+    text-align: center;
 }
 
 .page-header {
@@ -850,10 +850,6 @@ textarea.input-lg {
 
 input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].btn-block {
     width: 100%
-}
-
-.collapse {
-    display: none
 }
 
 .dropdown {

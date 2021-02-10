@@ -81,11 +81,11 @@ a:hover {
 }
 
 .d-bloc .a-btn, .d-bloc .navbar a, .d-bloc .navbar-brand, .d-bloc a .icon-lg, .d-bloc a .icon-md, .d-bloc a .icon-sm, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a {
-    color: rgba(255, 255, 255, .6)
+    color: #000!important;(0, 0, 0, 0)
 }
 
 .d-bloc .a-btn:hover, .d-bloc .navbar a:hover, .d-bloc .navbar-brand:hover, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-sm, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1)
+    color: rgba(255, 255, 255, 1)!important;
 }
 
 .l-bloc {
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .l-bloc .a-btn, .l-bloc .navbar a, .l-bloc .navbar-brand, .l-bloc a .icon-lg, .l-bloc a .icon-md, .l-bloc a .icon-sm, .l-bloc h1 a, .l-bloc h2 a, .l-bloc h3 a, .l-bloc h4 a, .l-bloc h5 a, .l-bloc h6 a, .l-bloc p a {
-    color: rgba(0, 0, 0, .6)
+    color: rgb(0, 0, 0)
 }
 
 .l-bloc .a-btn:hover, .l-bloc .navbar a:hover, .l-bloc .navbar-brand:hover, .l-bloc a:hover .icon-lg, .l-bloc a:hover .icon-md, .l-bloc a:hover .icon-sm, .l-bloc h1 a:hover, .l-bloc h2 a:hover, .l-bloc h3 a:hover, .l-bloc h4 a:hover, .l-bloc h5 a:hover, .l-bloc h6 a:hover, .l-bloc p a:hover {
@@ -415,17 +415,19 @@ a[data-lightbox]:hover img {
     background: 0 0
 }
 
-.btn, a, label, p {
+.btn, a, label{
+    font-family: helvetica;
+    font-weight: 400;
+    color: #575757!important;
+}
+
+.btn, a, h1, h2, h3, h5, h6, label, p {
     font-family: helvetica;
     font-weight: 400;
     color: #575757!important
 }
 
-.btn, a, h1, h2, h3, h4, h5, h6, label, p {
-    font-family: helvetica;
-    font-weight: 400;
-    color: #575757!important
-}
+
 
 .container {
     max-width: 1000px
@@ -436,7 +438,7 @@ a[data-lightbox]:hover img {
 }
 
 p {
-    font-size: 11px
+    font-size: 15px
 }
 
 .tight-width-whitespace {
@@ -486,7 +488,7 @@ h1 {
 }
 
 h4 {
-    color: #333!important
+    color: #000!important
 }
 
 .icons {
@@ -512,6 +514,10 @@ h4 {
     padding: 40px 40px 40px 40px
 }
 
+.black{
+    color:#000;
+}
+
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important
@@ -522,7 +528,7 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577
+    background-color: #484043
 }
 
 .bgc-atomic-tangerine {
@@ -530,12 +536,12 @@ h4 {
 }
 
 .tc-white {
-    color: #f3976c!important
+    color: #f3a682!important
 }
 
 .btn-atomic-tangerine {
     background: #f3976c;
-    color: #fff!important
+    color: #000!important
 }
 
 .btn-atomic-tangerine:hover {
@@ -597,7 +603,52 @@ label {
     align-items: center;
 }
 
+#footer_intro{
+    color: #000!important;
+}
 
+#footer_url{
+    color: #000!important;
+}
+#footer_url2{
+    color: #000!important;
+}
+#footer_url3{
+    color: #000!important;
+}
+#footer_url4{
+    color: #000!important;
+}
+
+#footer_url:hover{
+    color: white!important;
+}
+#footer_url2:hover{
+    color: white!important;
+}
+#footer_url3:hover{
+    color: white!important;
+}
+#footer_url4:hover{
+    color: white!important;
+}
+
+/* page de contact carte de visite */
+
+#visite_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px  solid #b77e33;
+    background-color: #c2785688;
+    border-radius:15px 15px 15px 15px ;
+    height:440px ;
+}
+
+#visite_card>img{
+    margin-bottom: 25px;
+}
 
 .bg-dots-bg {
     background-image: url(https://williamhod.github.io/-HodicqWilliam_4_04022021/img/dots-bg.png)
@@ -771,6 +822,15 @@ label {
         justify-content: center;
         align-items: center;
         
+    }
+
+    #visite_card{
+        margin-top: 25px;
+        height: auto;
+        
+    }
+    .quote_fork{
+        font-size: 14px;
     }
 }
 
