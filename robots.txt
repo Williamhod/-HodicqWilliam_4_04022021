@@ -1,0 +1,3 @@
+User-Agent: *
+Sitemap:https://williamhod.github.io/-HodicqWilliam_4_04022021/sitemap.xml
+Allow: /*
