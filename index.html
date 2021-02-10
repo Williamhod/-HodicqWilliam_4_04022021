@@ -13,12 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
-	<script defer src="./js/jquery-2.1.0.min.js"></script>
-	<script defer src="./js/bootstrap.min.js"></script>
-	<script defer src="./js/blocs.min.js"></script>
-	<script defer src="./js/jquery.touchSwipe.min.js"></script>
-	
-	
+
+
 
 	<meta name=”robots” content=”index”>
 	<meta name="google-site-verification" content="sjaJall-5yPtNesTzb2dqgNkooLWpORxxk7SEKuAhak" />
@@ -180,12 +176,15 @@
 					<div class="col-sm-6">
 						<a href="#" data-lightbox="img/1.jpg" data-gallery-id="gallery-1"
 							data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
-							<div
-								data-src="img/1.jpg"
-								
-								class="img-responsive portfolio-thumb lazy" >
+							<div data-src="img/1.jpg" alt="l'image représente plusieurs cahiers empilés les uns sur les autres." 
+							class="img-responsive portfolio-thumb lazy">
 							</div>
-							</a>
+							<noscript>
+								<img
+								src="img/1.jpg" class="img-responsive portfolio-thumb"
+								alt="l'image représente plusieurs cahiers empilés les uns sur les autres." />
+							</noscript>
+						</a>
 
 						<h3 class="mg-md text-center">
 							Refonte d'un site web pour un journal local
@@ -196,9 +195,16 @@
 					</div>
 					<div class="col-sm-6">
 						<a href="#" data-lightbox="img/2.jpg" data-gallery-id="gallery-1"
-							data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img
-								src="img/2.jpg" class="img-responsive portfolio-thumb"
-								alt="L'image représente une photographes devant son objectif" /></a>
+							data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+								<div data-src="img/2.jpg" alt="L'image représente une photographes devant son objectif."
+								class="img-responsive portfolio-thumb lazy">
+								</div>
+								<noscript>
+									<img
+									src="img/2.jpg" class="img-responsive portfolio-thumb"
+									alt="L'image représente une photographes devant son objectif." />
+								</noscript>
+							</a>
 						<h3 class="mg-md text-center">
 							Création d'un site web pour photographes
 						</h3>
@@ -210,9 +216,16 @@
 				<div class="row tight-width-whitespace portfolio-row">
 					<div class="col-sm-6">
 						<a href="#" data-lightbox="img/3.jpg" data-gallery-id="gallery-1"
-							data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img
-								src="img/3.jpg" class="img-responsive portfolio-thumb"
-								alt="Cette image montre les élèments qu'un voyageurs professionnel enmènent, pc, objectifs etc..." /></a>
+							data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+							<div data-src="img/3.jpg" alt="Cette image montre les élèments qu'un voyageurs professionnel enmènent, pc, objectifs etc..."
+							class="img-responsive portfolio-thumb lazy">
+							</div>
+								<noscript>
+									<img
+									src="img/3.jpg" class="img-responsive portfolio-thumb"
+									alt="Cette image montre les élèments qu'un voyageurs professionnel enmènent, pc, objectifs etc..."/>
+								</noscript>
+							</a>
 						<h3 class="mg-md text-center">
 							Création d'un site internet pour un voyageur
 						</h3>
@@ -223,9 +236,16 @@
 					</div>
 					<div class="col-sm-6">
 						<a href="#" data-lightbox="img/4.jpg" data-gallery-id="gallery-1"
-							data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img
-								src="img/4.jpg" class="img-responsive portfolio-thumb"
-								alt="représentation d'un post de travail, de designers travaillant sur le projet d'une agence de mariage" /></a>
+							data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+							<div data-src="img/4.jpg" alt="représentation d'un post de travail, de designers travaillant sur le projet d'une agence de mariage" 
+							class="img-responsive portfolio-thumb lazy">
+							</div>
+								<noscript>
+									<img
+									src="img/4.jpg" class="img-responsive portfolio-thumb"
+									alt="représentation d'un post de travail, de designers travaillant sur le projet d'une agence de mariage"/>
+								</noscript>
+							</a>
 						<h3 class="mg-md text-center">
 							Conception d'un site pour une agence de mariage
 						</h3>
@@ -257,8 +277,8 @@
 
 		<!-- ScrollToTop Button -->
 		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
-			class="fa fa-chevron-up"></span></a>
-	<!-- ScrollToTop Button END-->
+				class="fa fa-chevron-up"></span></a>
+		<!-- ScrollToTop Button END-->
 
 		<!-- Footer - bloc-8 -->
 		<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
@@ -320,20 +340,18 @@
 
 
 
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery.touchSwipe.min.js"></script>
 
+	<script src="./js/jquery.lazy.min.js"></script>
+	<script>
+		$(function () {
+			$('.lazy').lazy();
+		});
+	</script>
 
-<script> jQuery(function() {
-        jQuery('.lazy').lazy({
-          beforeLoad: function(element){
-              console.log('image "' + stripTime(element.data('src')) + '" is about to be loaded');
-          },
-          afterLoad: function(element) {
-              console.log('image "' + stripTime(element.data('src')) + '" was loaded successfully');
-          },
-          onError: function(element) {
-              console.log('image "' + stripTime(element.data('src')) + '" erroooooooor'); }});
-    });</script>         
-<script  src="js/jquery.lazy.min.js"></script>     
 </body>
 
 </html>
