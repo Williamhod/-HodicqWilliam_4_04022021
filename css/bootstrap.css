@@ -1109,7 +1109,8 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-btn>
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
-    text-decoration: none
+    text-decoration: none;
+    color:sienna;
 }
 
 .navbar-brand>img {

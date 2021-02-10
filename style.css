@@ -76,15 +76,15 @@ a:hover {
     color: rgba(255, 255, 255, .7)
 }
 
-.d-bloc button:hover {
+.d-bloc button:hover,.d-bloc button:focus {
     color: rgba(255, 255, 255, .9)
 }
 
 .d-bloc .a-btn, .d-bloc .navbar a, .d-bloc .navbar-brand, .d-bloc a .icon-lg, .d-bloc a .icon-md, .d-bloc a .icon-sm, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a {
-    color: #000!important;(0, 0, 0, 0)
+    color: #000!important;
 }
 
-.d-bloc .a-btn:hover, .d-bloc .navbar a:hover, .d-bloc .navbar-brand:hover, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-sm, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover {
+.d-bloc .a-btn:hover,.a-btn:focus, .d-bloc .navbar a:hover,a:focus, .d-bloc .navbar-brand:hover,.navbar-brand:focus,.d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-md,.d-bloc a:hover .icon-md:focus, .d-bloc a:hover .icon-sm, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover,.d-bloc a:focus .icon-md{
     color: rgba(255, 255, 255, 1)!important;
 }
 
@@ -92,7 +92,7 @@ a:hover {
     color: rgba(0, 0, 0, .5)
 }
 
-.l-bloc button:hover {
+.l-bloc button:hover,.l-bloc button:focus {
     color: rgba(0, 0, 0, .7)
 }
 
@@ -110,6 +110,10 @@ a:hover {
 
 .voffset-lg {
     margin-top: 80px
+}
+
+#ready_link{
+    color: rgb(250, 220, 207)!important;
 }
 
 .row-no-gutters {
@@ -169,6 +173,14 @@ a:hover {
 
 .nav>li a:focus, .nav>li a:hover {
     background: 0 0
+}
+
+.menu_link:hover,.menu_link:focus{
+    color: sienna!important     ;
+}
+
+.mail_sending:hover,.mail_sending:focus{
+    color: white!important;
 }
 
 @media (min-width:768px) {
@@ -536,7 +548,7 @@ h4 {
 }
 
 .tc-white {
-    color: #f3a682!important
+    color: #f89f75!important
 }
 
 .btn-atomic-tangerine {
@@ -544,7 +556,7 @@ h4 {
     color: #000!important
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,.btn-atomic-tangerine:focus {
     background: #c27956!important;
     color: #fff!important
 }
@@ -553,7 +565,7 @@ h4 {
     color: #fff!important
 }
 
-.ltc-white:hover {
+.ltc-white:hover,.ltc-white:focus {
     color: #ccc!important
 }
 
@@ -561,7 +573,7 @@ h4 {
     color: #f3976c!important
 }
 
-.ltc-atomic-tangerine:hover {
+.ltc-atomic-tangerine:hover,.ltc-atomic-tangerine:focus {
     color: #c27956!important
 }
 
@@ -620,16 +632,16 @@ label {
     color: #000!important;
 }
 
-#footer_url:hover{
+#footer_url:hover,#footer_url:focus{
     color: white!important;
 }
-#footer_url2:hover{
+#footer_url2:hover,#footer_url2:focus{
     color: white!important;
 }
-#footer_url3:hover{
+#footer_url3:hover,#footer_url3:focus{
     color: white!important;
 }
-#footer_url4:hover{
+#footer_url4:hover,#footer_url4:focus{
     color: white!important;
 }
 
@@ -744,7 +756,7 @@ label {
         padding-left: 15px;
         width: 100%
     }
-    .nav>li:hover {
+    .nav>li:hover,.nav>li:focus {
         background: rgba(0, 0, 0, .08)
     }
     #hero-bloc .navbar .nav {
