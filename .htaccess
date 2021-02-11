@@ -12,6 +12,30 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
 # END GZIP
 
+</IfModule>
+
+# CACHE NAVIGATEUR
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+ <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|js|jpg)$">
+ Header set Cache-Control " min-age=2591999 max-age=2592000, public"
+ </FilesMatch>
+ <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|js|jpg)$">
+ Header set Cache-Control "min-age=2591999 max-age=2592000, private"
+ </FilesMatch>
+ <filesMatch "\.(html|htm)$">
+ Header set Cache-Control "min-age=7199 max-age=7200 public"
+ </filesMatch>
+ # Enleve le cache pour les ressources dynamiques
+ <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+ Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+
+# BEGIN Expires Headers
+
+
 <IfModule mod_expires.c>
   ExpiresActive On
 
@@ -48,27 +72,6 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   ExpiresByType application/pdf "access plus 2592000 seconds"
   ExpiresByType image/vnd.microsoft.icon "access plus 2592000 seconds"
 
-</IfModule>
 
-# CACHE NAVIGATEUR
-# BEGIN Cache-Control Headers
-<IfModule mod_headers.c>
- <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|js|jpg)$">
- Header set Cache-Control " min-age=2591999 max-age=2592000, public"
- </FilesMatch>
- <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|js|jpg)$">
- Header set Cache-Control "min-age=2591999 max-age=2592000, private"
- </FilesMatch>
- <filesMatch "\.(html|htm)$">
- Header set Cache-Control "min-age=7199 max-age=7200 public"
- </filesMatch>
- # Enleve le cache pour les ressources dynamiques
- <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
- Header unset Cache-Control
-</FilesMatch>
-</IfModule>
-# END Cache-Control Headers
-
-# BEGIN Expires Headers
 
 
