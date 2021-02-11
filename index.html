@@ -15,7 +15,6 @@
 	<link rel="preload" href="./css/font-awesome.css" as="style" onload="this.rel='stylesheet'">
 
 	<script defer src="./js/bootstrap.min.js"></script>
-	<script defer src="./js/blocs.min.js"></script>
 	<script defer src="./js/jquery.touchSwipe.min.js"></script>
 
 	<meta name=”robots” content=”index”>
@@ -41,7 +40,7 @@
 							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 						</button>
 					</div>
-					<div class="collapse navbar-collapse navbar-1 ">
+					<div class="navbar-collapse navbar-1 collapse" aria-expanded="false" style="height: 1px;">
 						<ul class="site-navigation nav navbar-nav">
 							<li>
 								<a class="menu_link" href="#bloc-4-portfolio">Portfolio</a>
@@ -344,13 +343,14 @@
 
 	<!-- Principal conteneur END -->
 	<script  src="./js/jquery-2.1.0.min.js"></script>
+	<script  src="./js/blocs.min.js"></script>
 	<script src="./js/jquery.lazy.min.js"></script>
 	<script>
 		$(function () {
 			$('.lazy').lazy();
 		});
 	</script>
-
+	
 </body>
 
 </html>
